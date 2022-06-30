@@ -5,8 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="currency.css">
+    <!-- javascript link  -->
+    <script src="js/currency.js"></script>
+    <script src="js/country-list.js"></script>
+    <!-- FontAwesome CDN links for icons type in google to get link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
+    <!-- Main class -->
+    <div class = "wrapper">
+        <header>Currency Converter</header>
+        <form action="#">
+            <!-- Sub class 1 -->
+            <div class ='amount'>
+                <p> Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+            <!-- Sub class 2 -->
+            <div class = "drop-list">
+                <!-- Sub class 3 FROM LIST -->
+                <div class = "From">
+                    <p>From</p>
+                    <!-- Sub class 4 -->
+                    <div class = "select-box">
+                        <!-- Inserted image from computer and paste the image folder -->
+                        <img src="C:\Users\yadla\OneDrive\Documents\GitHub\currency_converter\images\united-states.png" alt="flag" width ="70" height="70">
+                        <select >
+                            <option value="USD">USD</option>
+                            <option value="NPR">NPR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="INR">INR</option>
+                            <option value="PKR">PKR</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- double side arrow indication -->
+                <div class = "icon"><i class ="fas fa-exchange-alt"></i></div>
+                <!-- Sub class 5  To list-->
+                <div class = "To">
+                    <p>To</p>
+                    <!-- Sub class 6 -->
+                    <div class = "select-box">
+                        <!-- Inserted image from computer and paste the image folder -->
+                        <img src="C:\Users\yadla\OneDrive\Documents\GitHub\currency_converter\images\india.png" alt="flag" width ="70" height="70">
+                        <select >
+                            <option value="USD">USD</option>
+                            <option value="NPR">NPR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="INR">INR</option>
+                            <option value="PKR">PKR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- exchange rate class -->
+            <div class ="exchange-rate">1 USD = 75.66 INR</div>
+            <!-- to create a button -->
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
     
 </body>
 </html>
