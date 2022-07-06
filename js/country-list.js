@@ -1,4 +1,4 @@
-let country_code = {
+let country_list = {
     "AED" : "AE",
     "AFN" : "AF",
     "XCD" : "AG",
